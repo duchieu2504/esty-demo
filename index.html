@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main/assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../main/assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../main/assets/css/main.css">
+    <link rel="stylesheet" href="../main/assets/css/reset.css">
+    <link rel="stylesheet" href="../main/assets/css/grid.css">
+    
+</head>
+<body>
+    <div class="esty">
+        <div class="header">
+            <div class="grid wide">                 
+                    <div class="header__with-search">
+                        <div class="header__search-logo">
+                            <!-- <img src="./assets/img/logo.PNG" alt="" class="header__search-img"> -->
+                            <svg class="header__search-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" aria-hidden="true" focusable="false">
+                                <path fill="#f1651f" d="M6.547,3.125v6.008c0,0,2.117,0,3.25-0.086c0.891-0.156,1.055-0.242,1.219-1.133l0.328-1.305h0.969l-0.164,2.852 l0.086,2.922h-0.977l-0.242-1.141c-0.242-0.812-0.57-0.977-1.219-1.055c-0.812-0.086-3.25-0.086-3.25-0.086v5.039 c0,0.969,0.492,1.383,1.625,1.383h3.414c1.055,0,2.109-0.086,2.766-1.625l0.883-1.953h0.82c-0.086,0.406-0.492,3.984-0.57,4.789 c0,0-3.086-0.078-4.383-0.078H5.25l-3.492,0.078v-0.883l1.133-0.25c0.82-0.164,1.062-0.406,1.062-1.055 c0,0,0.086-2.195,0.086-5.852c0-3.648-0.086-5.844-0.086-5.844c0-0.727-0.242-0.891-1.062-1.055L1.758,2.555V1.664l3.414,0.07h6.5 c1.297,0,3.484-0.234,3.484-0.234s-0.078,1.375-0.164,4.625h-0.891l-0.328-1.141c-0.32-1.461-0.805-2.188-1.703-2.188H6.961 C6.547,2.797,6.547,2.875,6.547,3.125z M19.703,3.766h0.977V7.18l3.336-0.164l-0.164,1.547l-3.25-0.25v6.016 c0,1.703,0.57,2.359,1.547,2.359c0.883,0,1.539-0.492,1.781-0.898l0.484,0.57c-0.484,1.133-1.859,1.703-3.164,1.703 c-1.617,0-2.93-0.969-2.93-2.836V8.398h-1.938V7.586C18.008,7.422,19.219,6.445,19.703,3.766z M26.695,14.242l0.648,1.547 c0.242,0.648,0.812,1.305,2.109,1.305c1.383,0,1.953-0.734,1.953-1.625c0-2.766-5.445-1.953-5.445-5.688c0-2.109,1.703-3.094,3.898-3.094c0.977,0,2.438,0.164,3.172,0.492c-0.164,0.812-0.25,1.867-0.25,2.68l-0.805,0.078l-0.57-1.625 c-0.164-0.398-0.82-0.727-1.625-0.727c-0.977,0-1.953,0.406-1.953,1.461c0,2.516,5.609,1.953,5.609,5.688c0,2.117-1.867,3.25-4.148,3.25c-1.703,0-3.414-0.656-3.414-0.656c0.164-0.969,0.086-2.023,0-3.086H26.695z M33.031,22.039 c0.242-0.891,0.406-2.023,0.57-3.086l0.891-0.078l0.328,1.703c0.078,0.406,0.32,0.734,0.969,0.734c1.055,0,2.438-0.648,3.742-2.922 c-0.578-1.383-2.281-5.844-3.828-9.258c-0.406-0.898-0.484-0.977-1.047-1.141l-0.414-0.156v-0.82l2.445,0.086l3-0.164V7.75 l-0.734,0.164c-0.57,0.078-0.805,0.398-0.805,0.727c0,0.086,0,0.164,0.078,0.328c0.156,0.492,1.461,4.141,2.438,6.578c0.805-1.703,2.352-5.523,2.594-6.172c0.086-0.328,0.164-0.406,0.164-0.648c0-0.414-0.242-0.656-0.805-0.812L42.039,7.75V6.938 l2.281,0.078l2.109-0.078V7.75l-0.406,0.32c-0.812,0.328-0.898,0.406-1.219,1.062l-3.57,8.359 c-2.117,4.797-4.312,5.203-5.852,5.203C34.406,22.695,33.672,22.445,33.031,22.039z">
+
+                                </path>
+                            </svg>
+                        </div>
+        
+                        <div class="header__search">
+                            <input type="text" class="header__search-input" placeholder="Esty">
+            
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <button class="btn">
+                            <a href="../login.html" class="btn-link">Sign in</a>
+                        </button>
+                        <div class="header__search-cart">
+                            <i class="header__search-cart-icon fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar">
+                
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item active">Jewelry & Accessories</li>
+                            <li class="header__navbar-item">Home & Living</li>
+                            <li class="header__navbar-item">Clothing & Shoes</li>
+                            <li class="header__navbar-item">Wedding & Party</li>
+                            <li class="header__navbar-item">Toys & Entertainment</li>
+                            <li class="header__navbar-item">Art & Collectibles</li>
+                            <li class="header__navbar-item">Craft Supplies & Tools</li>
+                            <li class="header__navbar-item">Vintage</li>
+                            <div class="line"></div>
+                        </ul>
+                        <div class="header__product-name">
+                            <div class="header__product-list">
+                                <div class="row">
+                                    <div class="col c-4">
+                                        <ul class="header__product-item">
+                                            <li class="header__product-item-textAll">
+                                                All Jewelry & Accessories
+                                                <i class="textAll-icon fas fa-arrow-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Accessories
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Bags & Purses
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Body
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Necklase
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Ring
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Earings
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-text">
+                                                Polo
+                                                <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                            <li class="header__product-item-textAll">
+                                                All Jewelry
+                                                <i class="textAll-icon fas fa-arrow-right"></i>
+                                            </li>
+                                        </ul>                                                           
+                                    </div>
+                                    
+                                    <div class="col c-8">
+                                        <div class="header__product-itemMin">
+                                            <div class="row">
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-item-textAll">
+                                                            All Jewelry
+                                                            <i class="textAll-icon fas fa-arrow-right"></i>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__product-itemMin">
+                                            <div class="row">
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-item-textAll">
+                                                            All Jewelry
+                                                            <i class="textAll-icon fas fa-arrow-right"></i>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__product-itemMin">
+                                            <div class="row">
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                        <li class="header__product-pane-textBold">Hast & Cat</li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                                <div class="col c-6">
+                                                    <ul class="header__product-pane">
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-pane-text">Hast & Cat</li>
+                                                        <li class="header__product-item-textAll">
+                                                            All Jewelry
+                                                            <i class="textAll-icon fas fa-arrow-right"></i>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div class="contain">
+            <div class="contain__heading">Magical, meaningful items you can’t find anywhere else.</div>
+            <div class="grid wide">
+                <div class="content">
+                    <div class="content__heading">
+                        <p class="content__heading-p">Esty com</p>
+                        <h3 class="content__heading-h3">(19 relevant results, with Ads)</h3>
+                    </div>
+                    <div class="content-filter">
+                        <div class="content__price">
+                            <span class="content__price-heading content__price-textFrame">Price ($)</span>
+                            <div class="content__price-line content__price-frame"></div>
+                            <ul class="content__price-list">
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="any" class="content__price-name">Any price
+                                </li>
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="under25" class="content__price-name">Under US$25
+                                </li>
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="255to50" class="content__price-name">US$25 to US$50
+                                </li>
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="50to100" class="content__price-name">US$50 to US$100
+                                </li>
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="over" class="content__price-name">Over US$100
+                                </li>
+                                <li class="content__price-item">
+                                    <input name="price" type="radio" value="custom" class="content__price-name">Custom
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="content-filter__sort">
+                            <div class="content__sort">
+                                <span class="content__sort-heading">Sort by: Relevancy</span>
+                                <ul class="modal-list">
+                                    <li class="modal-item">
+                                        <a href="" class="modal-link">Relevancy</a>
+                                        <i class="content__sort-icon fas fa-check"></i>
+                                    </li>
+                                    <li class="modal-item">
+                                        <a href="" class="modal-link">Top Customer Reviews</a>
+                                    </li>
+                                    <li class="modal-item">
+                                        <a href="" class="modal-link">Highest Price</a>
+                                    </li>
+                                    <li class="modal-item">
+                                        <a href="" class="modal-link">Lowest Price</a>
+                                    </li>
+                                    <li class="modal-item">
+                                        <a href="" class="modal-link">Most recent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-product">
+                    <div class="row productList">
+                              
+                    </div>
+                </div>
+                <ul class="home-product__pagination">
+                    <li class="home-product__pagination-item">
+                        <a href="" class="home-product__link">
+                            <i class="home__pagination-icon fas fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="home-product__pagination-item">
+                        <a href="" class="home-product__link-number">1</a>
+                    </li>
+                    <li class="home-product__pagination-item">
+                        <a href="" class="home-product__link">
+                            <i class="home__pagination-icon fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__header">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer__address-header-img" viewBox="0 0 1280 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                    <path fill="#D7E6F5" d="M1280 30h-8.1c-5.7 0-37-10.9-37.4-10.7-2.2 1.2-17.6-.8-19.9-4.1 0 0-9.8-3.3-10.3-3.3-1.3 0-12.6 3-13 2.5-.7-.7-13.8-3.7-13.8-5.3-2.3 1.3-21.2-7.8-23.4-6.7-1-.8-2.2-1.5-3.3-2.4-1.8 1.9-3.3 3.4-4.7 4.9-2.7-.8-4.8-1.4-7.1-2.1-.5.1-1 .3-1.5.5-4 1.3-5.3 1-7.3-1.3-1.7-2.1-5.3-2.2-8.1-.8-2 1-4.6 2.6-6.5 2.3-4.5-.7-6 1.1-8.1 2.6-1.5 1.1-3.1 2.1-4.6 3.1-1.8-.8-3.5-1.2-5.3-2-.3.8-.7 1.3-.8 2-.5 0-.8 0-1.2-.1V3.5c-2 .8-3.5 1.2-4.8 1.8-1.3-.8-2.3-1.6-3.5-2.4-5.1 1.2-10.1 2-15.3.1-.8-.3-2.2-.3-3-.1-1.2.3-2.2 1-3.3 1.6-1.2-.3-2.3-.8-3.8-1.1-1.7 1.1-3 2.9-6.5 1.6-.8-.3-2.3.1-3.5.3-4 .8-7.8 1.4-11.9 2-1.5.2-3-.2-4.7-.3-1-.1-1.8-.2-2.8-.2-6-.3-11.8 2.3-17.8.1-.5-.2-1.3-.2-1.8-.1-3.8 1.6-8.3 1.2-12.5 1.3-1 0-2.2.5-3.1.9-1.8.8-9.5 1.5-11.5 1.1-4.5-.8-8.1-.3-10.1 2.3-12.8-1.6-12.8-1.6-17.1.9-2.3-.4-6-1.6-7.1-1.1-4.7 2.4-7 .2-9.8-1.4-5 1.1-10.8-.8-15.8 1.4-7.3-2.7-14.9-2.7-22.9-.2-5-3.7-9.6-3.8-13.8 0-.3-1.3-.7-2.5-1-3.8-3.3.8-6.1 1.1-8.6 1.8-2.7.7-6 2.3-7.5 1.9-4.2-1.3-5.3 1.8-9 1.4-1-.9-2.3-2.2-4-3.5-1.3.3-2.8.7-4 1-3.5 1.1-6.8 2-10.3 0-.5-.3-1.8-.2-2.8-.1-2.5.2-4.8.7-7.5.9-.8.9-1.7 1.9-2.3 2.9-8.5-1.1-16.4-2.6-24.7-.4-.3.1-1.2-.1-1.7-.3-2.3-1.2-3.7-.3-5.1.8-1.2.7-2.7 1.8-4 1.8-7.3.2-14.8-.4-22.1.3-3 .3-6.8-.3-9 .7-3.3 1.5-6 .9-9.1.5-2.7-.4-5-.9-7.1-2.1-2-1-4.3-.5-4.6 1.1-.3 1.5-1.8 2.3-3.7 2.1-3.3-.8-6.8-.3-10-1.8-4.8-2.1-10.6-2.7-16.3-.7-1.7.7-3.3 1-5 1.6-.3.1-.8.1-1.5.1-1.2-.7-2.3-1.2-3.5-1.9-2 1.8-4.6 1.8-7.1.9-2.8-.8-5.6-1.3-8.8-.9-2.7.3-5.5.5-8.3.7-2 .1-4.5.8-5.8-.9-.2-.3-1.5-.4-2.2-.3-3.7.7-7.3 1.5-11 2.2-.2-.3-.5-.5-.5-.7-.2-.3-.2-.8-.2-.8-1.8.5-3.7 1.2-5.6 1.4-1.8.2-4.7-.7-5.8-.1-3.8 1.9-8.1 1.2-12.3 1.9-2.2-2.5-2.2-2.5-5.8-.9-.7.3-1.5.5-2.3.5-3-.1-6.1-.2-9.1-.5-2.7-.3-5.6-.5-7.6-1.4s-3.8-1.3-6.1-1.2c-4.6.2-9.3.3-13.9.5-4.3.2-8.6.4-14.3.8-1.7-.5-4.7-1.2-7.5-2.2-3.7-1.4-7.1-1.4-10.8.1-1.7.7-4.5 1.6-5.5 1.2-3.3-1.4-1.7 1.3-3 1.1-1.8-.3-3.7-.9-5.1-.7-3.7.4-7.1-.2-10.8-.1-5 .1-10 0-11.6 4.1-5-2.4-9.1-1-13 .5-1.3-.8-2.2-1.4-2.8-1.9-1.7.5-3 1.3-4.2 1.1-2.7-.3-5-1.1-7.3-1.8-1 .4-2 1-3 1.1-5.1.4-10.3.4-15.3.9-2 .2-5-.5-6.6 1.1-.3.3-2.8.4-3.3 0-2.2-1.9-5.1-1.2-8-1-3.3.3-6.6.5-9.8-.7-1.5-.5-4-.8-5.3-.2-4.6 1.9-9.5 2.6-14.9 3.3-5.6.8-9.8-.5-13.9-2.2-1.7 1-3.3 1.6-5.5.4-4.8-3-10.1-2.1-15.6-.7-2.8-.8-5.5-3.3-9.6-1.2-5.6-.8-11.1-.7-16.4 1-.7.2-2 .1-2.3-.2-1.7-1-3.5-1.8-6-1.6-1.2-2.5-4-.9-6.1-.8-2.5 0-5.1 1-7.1.5-2.5-.7-5-.4-7.3-.8-2.8-.4-6 .8-9 .8-5.3.3-10 1.4-13.9 3.6-.8.4-1.7.9-2.5.9-3.8.3-7.6.7-11.5.4-3.7-.3-7.3-.7-11.1-.1-1 .1-2.3-.5-3.3-.9-2.5-1-4.8-1.9-8.1-1.1-2.2.4-4.2 0-3.8-1.8-2.3.1-5 .8-7.1.3-2-.4-3-.9-4.5.5-.7.5-3.2.1-4.6.5-4.2.9-8.1 2.4-12.3 3-2.2.3-5.5.3-7.5-1.3-3.5-2.6-5.3-2.4-11-.9-1.3.3-2.8.8-4.3.9-3.3.2-6.8.3-10.8.5-2-2.9-6-5.2-11.5-7v3.1c-4.5-3.8-10.8-3-16.1-4.4-4.5 1.8-9 3.4-14.6 5.5-5-1-9.6-3.1-15.3-1.2-1 .3-3.2.1-4-.4-3.2-1.9-7.5-1.9-11-3.2-4.2-1.6-8.8-2.9-13.3-4.2-1.2-.3-11.8 2.4-13 2.4-6.6 0-20.3 11.5-25.6 9.8-6.1-2-13 .2-20.1-1-8.1 2.3-15.3 7.2-19.8 7.7H0M172.9 20c.1 0 .3 0 0 0z">
+                    </path>
+                </svg>
+            </div>
+            <div class="footer__address">
+                <div class="footer__address-heading">Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on Etsy.</div>
+                <div class="footer__address-email">
+                    <input id='email' type="text" name="email" placeholder="VD: email@domain.com" class="address-email">
+                    <div class="footer__address-email-heading">
+                        Subscribe
+                    </div>
+                    <div class="footer__address-email-background"></div>
+                </div>
+                <svg class="footer__contact-address-img"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 48" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                    <path fill="#4D6BC6" d="M839 47l7-1 4-1 2 1h4l3-1 3-1 2 1 1-1 8-1 2 1h4l5-1 2-1h5l2-1 1 1h6l2-1h9l2-1h4l3-1h27v1h10l1 1h3l3-1 1 1h11l6 2v-1h4l1-1h10l2 1h7l2 1h3l2 1h2l1-1h6v1h2l1-1 1 1h1l3 1h7l1 1h6l1-1h3l1 1 5-1h17l4-1h4l3 1h2l1 1h19l2-1h5v1l1-1h2l1 1h9l1-1 1 1 4-1h12l1-1h4l1-1h2l3-1h5v-1h11l1 1h6l2 1h3l1-1 2-1h1l2-1h5l2-1 2 1h2l2 1h5l1 1h2l2 1h1l1-2 1-1 2-1h10l2 1h6l1 1h2l1-2 2-1 1-1 2-1h12l1 1h19l1-1h6l1-1 3 1h7l2 2 1 1 7-1 1-1 2-1h4l2-1 1-1h6l1-1 2 1 3-1h9l1-1h2l2-1h2l1-1h1l4-1 3 1h1l1-1h2l1-1 2-1h2l2-1v-1h12l3-1h2l2-1h2l3 1 1-1 1-1h14V0H0v2h2v1-1h10l1 1 2-1h3l1 1h1V2h4l2 1v1l1-1h1l1 1V3l4 1h4l1 1h2l1-1h-1l1-1 1 1 2 1h1l2-1h7l2 1h9l2 1h3l1-1h4l2 1 2 1 2-1h8l1-1 1 1h4l2 1 3-1h10l1 1h3l3 1h1V7l2 1h4l1 1h1l1-1h5l3 1h2l1-1 1 1 1-1 2 1h5l1 1h1V8h1l2 1 1 1h4-1l1-1h1l2 1h2l1-1h1l3 1h20v1-1l1 1h2l2 1h2l2 1 2 1h6l1-1h4l1-1h2l5-1 3 1h9l1-1h2l1-1h4v1h3l4-2 3-1h2l1-1h6l8 1 3 1h3l2 1 1-1h1l2-1h9l4-1 6-2h6l2-1h7l5-1h1l1-1h15l1 1 2-1 2 1h2l1-1h1v1h1l6 1h2l1-1h4l2-1 4 1h5l2 1h1l1-1h3v1h2l3 1h5l1-1 1 1 1-1 2 1h6l2 1 3 1h1l2-1 2 1h8l2-1 2 1h4l2-1 2 1h4l1-1h9l3-1h4l1 1h4l2 1h18l3-1h4l1 1 1-1h2l1 1h7l2-1h1l1 1 4-1h11l2-1h2V4l1 1 4 1h1l2 1v1l4 1 4 1 3-1-1 1h2l1 1h2l-1 1h2l3 1 5 1 6 1 4 1 2 2 4-1h3l4 2 2-1h9l1 1h1l1-1 1 2 5-1h2l3-1 4 2 3 1 5 1 3-1 2 2 1 1 1 1h2l1 1 7 2h1l1 1h3l4 3 1-1 4 1 3 1h4l3 1 1 1h4l2 2h3l3 3h2l2 1h2l5 1 1-1 3 1 4 2v1l7-1-1 1h11l5 2h3l2-1v-2l2-1h9l3-2 4 1h5l3-1h5l5 1 1 1 2-1h5l2 1h4l4 1h4l2-1 4 2h1l2-1 2 1 1-2 1 1 2-1 1 1h15v1l3-1h1l3-1 1 1 1-1h2l6 2 1-1 3 1h3l3 1h3l8 2 5-1v1l2-1h1z">
+                    </path>
+                </svg>
+                <div class="footer__contact-address">
+                    <svg class="footer__contact-address-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-hidden="true" focusable="false">
+                        <path fill="#fff" d="M60.1 38H49v11h-2V38H35.9c1.931 9.368 6.626 17 12.1 17 5.474 0 10.171-7.632 12.1-17zm-25.145-9.5c-.003 2.511.19 5.019.577 7.5H47V18.522l-10.925.238a41.683 41.683 0 00-1.12 9.74zM47 2.31c-4.1 1.24-8.18 7.168-10.38 14.437L47 16.52V2.31z"></path>
+                        <path fill="#fff" d="M57.52 9.45l1.784-.9a31.775 31.775 0 012.558 7.65l9.117-.2.042 2-8.78.19c.55 3.41.818 6.857.8 10.31a50.836 50.836 0 01-.54 7.5H72v2h-9.846c-1.6 8.2-5.244 15.053-9.862 17.754C66.834 54.079 76 43.793 76 28.589c0-8.962-2.958-16.353-8.554-21.373A25.424 25.424 0 0049 1.04v15.438l10.83-.236a29.32 29.32 0 00-2.31-6.791zM43.51 55.643c-4.525-2.78-8.086-9.564-9.665-17.643H24v-2h9.5a50.84 50.84 0 01-.549-7.5 43.776 43.776 0 011.075-9.7l-9.009.2-.042-2 9.562-.208c1.89-6.667 5.317-12.436 9.432-15.143C29.71 4.412 20 15.13 20 28.589a27.636 27.636 0 0023.51 27.054z"></path>
+                        <path fill="#fff" d="M61.045 28.5a60.27 60.27 0 00-.818-10.265L49 18.479v17.52h11.468c.388-2.48.58-4.988.577-7.5zM91.7 60c-2.182 4.525-5.734 8.62-10.832 13.719l-1.414-1.414c6.6-6.6 10.511-11.424 12.08-17.7.072-.415.137-.832.215-1.278.607-3.48.262-5.951-1.027-6.068-.72-.066-1.559.68-1.947 2.3a30.158 30.158 0 01-2.454 8.148c-1.78 4.663-8.575 11.048-8.865 11.318l-1.366-1.461c.068-.063 6.8-6.391 8.381-10.62l.061-.133a30.644 30.644 0 002.526-9.148c.11-1.886.095-6.433-1.793-6.552-2.085-.132-2.537 3.505-3.367 7.379-.259 1.21-.89 3.456-1.153 4.243a1.55 1.55 0 01-.09.177c-1.386 4.053-5.32 7.859-5.515 8.045-2.984 2.983-9.707 9.74-9.707 9.74L64.01 69.3s6.726-6.761 9.727-9.761a28.158 28.158 0 003.064-3.6c.5-.788 1.452-2.646.55-3.572-1.148-1.178-3.287-.648-6.08.748-1.98.992-11.21 7.08-15.384 13.34-1.99 2.985-2.772 8.839-3.042 14.2l13.18 2.724 6.8 1.359a8.92 8.92 0 011-.778c7.075-4.74 14.663-11.833 17.317-16.54 3.566-6.32 1.988-7.52.558-7.42zM52.774 82.673l-.77 10.252 1.993.15.595-7.913 10.616 2.123 3.765.778L70.02 93.2l1.96-.4-.885-4.338 2.592.518.392-1.96-8.447-1.69-12.858-2.657zm-29.242 2.055l6.77-1.354 13.206-2.73c-.27-5.36-1.052-11.214-3.042-14.2-4.173-6.258-13.4-12.347-15.384-13.34-2.793-1.4-4.932-1.925-6.08-.747-.9.926.054 2.784.55 3.572a28.158 28.158 0 003.064 3.6c3 3 9.727 9.76 9.727 9.76l-1.418 1.41s-6.723-6.757-9.707-9.74c-.2-.186-4.129-3.992-5.515-8.045a1.74 1.74 0 01-.09-.177c-.263-.787-.894-3.033-1.153-4.243-.83-3.874-1.282-7.511-3.367-7.38-1.888.12-1.9 4.667-1.793 6.553a30.645 30.645 0 002.526 9.148l.061.133c1.58 4.229 8.313 10.557 8.381 10.62L18.9 69.034c-.29-.27-7.084-6.655-8.865-11.318a30.16 30.16 0 01-2.454-8.148c-.388-1.622-1.226-2.37-1.947-2.3-1.287.114-1.634 2.586-1.025 6.065.078.446.143.863.215 1.278C6.394 60.883 10.3 65.7 16.9 72.307l-1.41 1.414c-5.1-5.1-8.65-9.194-10.832-13.72-1.434-.104-3.013 1.1.553 7.42 2.654 4.706 10.238 11.8 17.321 16.529a8.92 8.92 0 011 .778zm7.175.605l-8.433 1.687.393 1.96 2.591-.518-.885 4.338 1.96.4 1.047-5.137 3.75-.775 10.631-2.126.595 7.913 1.994-.15-.77-10.252-12.873 2.66z"></path>
+                    </svg>
+                    <div class="footer__contact-address-heading">
+                        Etsy is powered by 100% renewable electricity.
+                    </div>
+                </div>
+                <div class="footer__contact-info">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-3">
+                                <div class="contact-info__text">Shop</div>
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">Gift cards</li>
+                                    <li class="contact-info__item">Etsy blog</li>
+                                </ul>
+                            </div>
+                            <div class="col l-3">
+                                <div class="contact-info__text">Sell</div>
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">Sell on Etsy</li>
+                                    <li class="contact-info__item">Teams</li>
+                                    <li class="contact-info__item">Forums</li>
+                                    <li class="contact-info__item">Affiliates</li>
+                                </ul>
+                            </div>
+                            <div class="col l-3">
+                                <div class="contact-info__text">About</div>
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">Etsy, Inc</li>
+                                    <li class="contact-info__item">Policies</li>
+                                    <li class="contact-info__item">Investors</li>
+                                    <li class="contact-info__item">Carees</li>
+                                    <li class="contact-info__item">Prees</li>
+                                </ul>
+                            </div>
+                            <div class="col l-3">
+                                <div class="contact-info__text">Help</div>
+                                <ul class="contact-info__list">
+                                    <li class="contact-info__item">Help Center</li>
+                                    <li class="contact-info__item">Trust and safety</li>
+                                    <li class="contact-info__item">Privacy settings</li>
+                                </ul>
+                                <div class="contact-info__down">
+                                    <div class="contact-info__down-textFrame">
+                                        <p class="contact-info__down-e">E</p>
+                                        <span class="contact-info__down-heading">Download the Esty App</span>
+                                    </div>
+                                    <div class="contact-info__down-line contact-info__down-frame"></div>
+                                </div>
+                                <div class="contact-info__social">
+                                    <i class="contact-info__social-logo fab fa-facebook-square"></i>
+                                    <i class="contact-info__social-logo fab fa-instagram"></i>
+                                    <i class="contact-info__social-logo fab fa-youtube"></i>
+                                    <i class="contact-info__social-logo fab fa-twitter"></i>
+                                    <i class="contact-info__social-logo fab fa-pinterest-p"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+</html>
