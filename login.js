@@ -35,9 +35,18 @@ const login = (() => {
             })
         },
         closeLogin() {
+            $('.btn').onclick = function(e) {
+                e.preventDefault()
+                $('.login').classList.add('active')
+            }
+
             const close = $('.close')
             close.addEventListener('click', () => {
-                close.classList.add('open')
+                close.classList.add('open');
+                $('.login').classList.remove('active')
+                setTimeout(() => {
+                    close.classList.remove('open');
+                }, 300);
             })
         },
 
