@@ -1,3 +1,5 @@
+import headerTitle from './headerTitle.js';
+
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -7,9 +9,7 @@ const main = (function () {
     const $navbarlist = $('.header__navbar-list')
     
     const $navbarActive = $('.header__navbar-item.active')
-    const $$productList = $$('.header__product-list')
 
-    const textAll = $$('.header__product-item-textAll')
     
     const $price = $('.content__price')
     const $priceHeading = $('.content__price-heading')
@@ -63,9 +63,16 @@ const main = (function () {
 
     ]
 
+    const listProductsName = [
+        {
+            textAll: ['All Jewelry & Accessories', 'All Jewelry'],
+            texts: ['Accessories', 'Bags & Purses', 'Necklaces', 'Rings', 'Earrings', 'Bracelets', 'Body Jewelry']
+        }
+    ]
+
     return {
         render() {
-            const html = infoProducts.map(function(infoProduct) {
+            const htmlInfo = infoProducts.map(function(infoProduct) {
                 if(infoProduct.isFreeShip !== "") {
                     var freeShip = `<div class="home-product__footer">
                                         <p>FREE shipping</p>
@@ -108,28 +115,33 @@ const main = (function () {
                             </a>
                         </div>`
             }).join("")
-            $('.home-product .productList').innerHTML = html;
+            $('.home-product .productList').innerHTML = htmlInfo;
 
             
             this.productLiked();
+
+            ////////////////////////////////////////////////////////////////
+
+            $('.header__product-name').innerHTML = headerTitle()
 
         },
         //navbar item
         navbars() {
             $('.header__navbar').addEventListener('mouseenter', (e) => { 
                 $navbars.forEach((navbar, index) => {
+                    const $$productList = $$('.header__product-list')
                     const productList = $$productList[index]
                     navbar.addEventListener('mouseenter', () => {
                         line.style.left = navbar.offsetLeft + "px";
                         line.style.width = navbar.offsetWidth + "px";
                         line.style.height = '2px';
                         line.style.transform = 'scaleX(1)';
-
+                        
                         $('.header__navbar-item.active').classList.remove('active')
                         navbar.classList.add('active');
-
+                        
                         setTimeout(() => {
-                                productList.classList.add('active');
+                            productList.classList.add('active');
                         }, 300)
                         setTimeout(() => {
                             const productListActive = $('.header__product-list.active')
@@ -139,6 +151,20 @@ const main = (function () {
                         }, 299)
                     })
                 })
+                const headerProductItem = $$('.header__product-item-text')
+                const productItemMins = $$('.header__product-itemMin')
+                if(headerProductItem) {
+                    headerProductItem.forEach((item, index) => {
+                        const productItemMin = productItemMins[index]
+                        item.addEventListener('mouseenter', () => {
+                            const x = $('.header__product-itemMin.active')
+                            if(x) {
+                                $('.header__product-itemMin.active').classList.remove('active')
+                            }
+                            productItemMin.classList.add('active')
+                        })
+                    })
+                }
             })
             $('.header__navbar').addEventListener('mouseleave', () => {
                 line.style.left = $('.header__navbar-item.active').offsetLeft + "px";
@@ -146,20 +172,16 @@ const main = (function () {
                 line.style.transitionDelay = '300ms';
                 line.style.height = '2px';
                 line.style.transform= 'scaleX(0)';
+                const $$productList = $$('.header__product-list')
                 setTimeout(() => {
                     for( var $productList of $$productList) {
                         if($productList.classList.contains('active')) {
-                                $productList.classList.remove('active');
+                            $productList.classList.remove('active');
                         }
                     }
                 }, 300)
 
                 setTimeout(() => {
-                    for( var $productList of $$productList) {
-                        if($productList.classList.contains('active')) {
-                                $productList.classList.remove('active');
-                        }
-                    }
                     line.style.height = null
                     line.style.left = null;
                     line.style.width = null;
@@ -167,24 +189,36 @@ const main = (function () {
                     line.style.transitionDelay = null;
                 }, 500)
             })
+            $('.header__product-name').addEventListener('mouseleave', () => {
+                const productItemMin = $$('.header__product-list .header__product-itemMin')
+                productItemMin.forEach(function(item) {
+                    if(item.getAttributeNode("data-set").value === '0'){
+                        item.classList.add('active')
+                    } else {
+                        item.classList.remove('active')
+                    }
+                })
+            })
         },
         
         //textAll
         textAll() {
-            textAll.forEach((item, index) => {
-
-                const textAllIcons = $$('.header__product-item-textAll .textAll-icon')
-                const textAllIcon = textAllIcons[index]
-
-                item.addEventListener('mouseenter', () => {
-                    textAllIcon.classList.add('active');
-                    // textAllIcon.style.transition = "c;
+            const textAll = $$('.header__product-item-textAll')
+            
+            if(textAll) {
+                textAll.forEach((item, index) => {
+                    const textAllIcons = $$('.header__product-item-textAll .textAll-icon')
+                    const textAllIcon = textAllIcons[index]
+    
+                    item.addEventListener('mouseenter', () => {
+                        textAllIcon.classList.add('active');
+                    })
+                    item.addEventListener('mouseleave', () => {
+                        textAllIcon.classList.remove('active');
+    
+                    })
                 })
-                item.addEventListener('mouseleave', () => {
-                    textAllIcon.classList.remove('active');
-
-                })
-            })
+            }
         },
         
         //price selectors

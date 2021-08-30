@@ -206,6 +206,7 @@
 .header__product-name .header__product-list {
   background-color: #fff;
   z-index: 3;
+  padding: 12px;
   -webkit-box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 6px;
@@ -216,14 +217,18 @@
   visibility: hidden;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header__product-name .header__product-list.active {
   visibility: visible;
+  opacity: 1;
 }
 
 .header__product-name .header__product-list .header__product-item {
-  padding: 0;
+  padding: 0px;
   list-style: none;
   text-decoration: none;
   margin: 0;
@@ -278,6 +283,10 @@
   padding-right: 12px;
 }
 
+.header__product-name .header__product-list .header__product-item > li.active {
+  opacity: 1;
+}
+
 .header__product-name .header__product-list .header__product-pane {
   margin: 0;
   padding: 0;
@@ -310,5 +319,16 @@
 
 .header__product-name .header__product-list .header__product-pane-textBold:hover {
   text-decoration: underline;
+}
+
+.header__product-name .header__product-list .header__product-itemMin {
+  padding: 0px;
+  opacity: 0;
+  display: none;
+}
+
+.header__product-name .header__product-list .header__product-itemMin.active {
+  display: block;
+  opacity: 1;
 }
 /*# sourceMappingURL=header.css.map */
